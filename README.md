@@ -9,86 +9,22 @@ Software Used: VS Code.
 Theory: 
 
 
-C++ decision-making statements control program flow based on conditions. The fundamental construct is the **`if` statement**, which executes code when a condition is true. **`if-else`** handles alternate cases, while **`if-else if` ladder** chains multiple conditions. The **`switch` statement** selects from multiple options based on the value of an expression—commonly used with `int` or `char` types. Conditional execution helps automate choices and logic flow, enhancing program responsiveness.
-
-- `if (condition) { /* code */ }`
-- `if (condition) { /* code */ } else { /* code */ }`
-- `switch (expression) { case value: /* code */ break; }`
-
-C++ also supports the **ternary operator** `condition ? expr1 : expr2` for concise decisions. These statements are essential for controlling behavior, reacting to input, and implementing algorithms that adapt dynamically.
+Decision-making statements in C++ control program flow based on conditions. They allow the program to choose between different paths depending on logical evaluations.
+The if statement executes a block if a condition is true. The if...else adds an alternative path when the condition is false. The else if chain handles multiple conditions. The switch statement is used for variable-based multi-way branching, ideal for discrete values like integers or characters.
+These constructs are essential for implementing logic, validations, and responsive behavior in real-world applications like calculators, games, or embedded systems. Logical (&&, ||, !) and relational (==, <, >=, etc.) operators are often used within conditions.
+Mastering decision-making strengthens algorithm design, enabling dynamic and interactive programs that adapt to varying inputs or runtime scenarios.
 
 
-CODE: C++ Program to check whether number is Even or Odd using decision making statements.
+Syntax:
 
+    if (x > 0) { ... }
+    else if (x == 0) { ... }
+    else { ... }
 
-    #include<iostream>
-    using namespace std;
-    int main()
-    {
-    int num;
-    cout<<"Enter a number: ";
-    cin>>num;
-    if(num%2==0)
-    {
-        cout<<"The number is Even.";
-    }
-    else
-    {
-        cout<<"The number is Odd.";
-    }
-    return 0;
-    }
-
-
-  CODE: C++ program to check whether a character is vowel or consonant.
-
-  
-    #include<iostream>
-    using namespace std;
-    int main()
-    {
-    char alphabet;
-    cout<<"Enter an alphabet: ";
-    cin>>alphabet;
-    if (alphabet == 'a' || alphabet == 'e' || alphabet == 'i' || alphabet == 'o' || alphabet == 'u' || alphabet == 'A' || alphabet == 'E' || alphabet == 'I' || alphabet ==       'O' || alphabet == 'U') 
-    {
-        cout<<"This alphabet is a vowel.";
-    }
-    else
-    {
-        cout<<"This alphabet is a consonant.";
-    }
-    return 0;
-    }
-
-
-CODE: C++ program to find largest number among three numbers using decision making statements.
-
-
-    #include<iostream>
-    using namespace std;
-    int main()
-    {
-    int a,b,c;
-    cout<<"Enter number a: "<<endl;
-    cin>>a;
-    cout<<"Enter number b: "<<endl;
-    cin>>b;
-    cout<<"Enter number c: "<<endl;
-    cin>>c;
-    if(a>b && a>c)
-    {
-        cout<<"Number a is the largest among the three.";
-    }
-    else if(b>a && b>c)
-    {
-        cout<<"Number b is the largest among the three.";
-    }
-    else
-    {
-        cout<<"Number c is the largest among the three.";
-    }
-    return 0;
+    switch(choice) {
+    case 1: ...; break;
+    case 2: ...; break;
+    default: ...;
     }
 
 
